@@ -1,0 +1,10 @@
+ aws ec2 create-key-pair \                                                                             ✔  46s  
+    --key-name KeyName \
+    --key-type rsa \
+    --key-format pem \
+    --query "KeyMaterial" \
+    --output text > KeyName.pem
+
+
+
+https://s3.us-west-2.amazonaws.com/cloudformation-templates-us-west-2/WordPress_Single_Instance.template
